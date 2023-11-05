@@ -1,0 +1,25 @@
+.main{
+    margin: 0;
+}
+
+.about__section,
+.skill__section,
+.proyects__section,
+.contact__section{   height: 100vh; 
+                     padding: 5vw 10vw;
+                 }
+
+
+.skill__section{
+    background-color: var(--celeste);
+}
+
+.contact__section{
+    background: var(--orange);
+}
+
+.bx{
+    font-size: 35px;
+    color: black;
+}
+

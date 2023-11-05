@@ -5,6 +5,7 @@
     grid-template-columns: 65vw 35vw;
     grid-template-rows: 1fr;
     color: var(--celeste);
+    z-index: -2;
 }
 
 .header__div{
@@ -15,6 +16,7 @@
     margin: 3vw 3vw 3vw 10vw;
     row-gap: 10px;
     align-items: start;
+    z-index: 2;
 }
 
 .header__h1{
@@ -74,19 +76,22 @@
 
 .header__h3{
     font-size: 1.3vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-row: 1fr;
+    grid-template-columns: 21vw 21vw;
     width: 42vw;
+    height: 8.5vw;
     color: white;
+    overflow: hidden;
 }
 
 .header__h3--span{
     width: 20vw;
+    margin-top: 1.6vw;
     position: relative;
-    top: 1.5vw;
     padding-left: 4px;
-    border-left: solid 1px var(--yellow) ;
+    border-left: solid 1px var(--yellow);
+    animation: h3span 2s linear;
 }
 
 .header__p{
@@ -110,4 +115,68 @@
     justify-self: end;
     font-weight: 300;
     font-style: normal;
+}
+
+.header__svg{
+    position: absolute;
+    top: 8vw;
+    right: 18vw;
+    width: 34vw;
+    height: 34vw;
+    z-index: 0;
+    animation: svg 1.5s alternate infinite;
+}
+
+
+.header__photo{
+    width: 18vw;
+    position: relative;
+    bottom: 1vw;
+    right: 1vw;
+    z-index: 12;
+    animation: photo 1.5s linear;
+}
+
+.header__figure--div{
+    border: solid 1px white;
+    width: 18vw;
+    height: 18vw;
+    position: relative;
+    top: 15vw;
+    left: -8vw;
+    z-index: 11;
+    box-sizing: content-box;
+}
+
+.span__point{
+    animation: point 1.5s infinite alternate;
+}
+
+@keyframes point {
+    from{
+        color:var(--red)
+    }
+    to{
+        color: var(--celeste);
+    }
+}
+
+@keyframes photo {
+    from{
+        bottom: 0vw;
+        right: 0vw;
+    }
+    to{
+        bottom: 1vw;
+        right: 1vw;
+    }
+}
+
+@keyframes h3span {
+    from{
+       top: -10vw;
+    }
+    to{
+        top: 0;
+    } 
 }
