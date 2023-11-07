@@ -1,28 +1,104 @@
 .main{
     margin: 0;
+    color: var(--letter);
 }
 
 .about__section,
 .skill__section,
-.contact__section{   height: 100vh; 
-                     padding: 5vw 19vw 5vw 10vw;
-                 }
-.proyects__section{
+.proyects__section,
+.contact__section{
+    height: 100vh; 
     padding: 5vw 19vw 5vw 10vw;
 }
 
+/******** about section ********/
+
+
+
+/******** skill section ********/
 
 .skill__section{
-    background-color: var(--celeste);
+    background-color: var(--third);
+    color: var(--secund);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.contact__section{
-    background: var(--orange);
+.skill__h2{
+    font-family: var(--Oswald);
+    font-size: var(--title);
+}
+
+.skill__h3{
+    font-size: var(--text);
+    font-weight: 500;
+    color: var(--alternate);
+}
+
+.skill__h3--span{
+    animation: point 1.5s infinite alternate;
+}
+
+.skill__icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    margin: 2vw 0;
+}
+
+.div__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .bx{
-    font-size: 35px;
-    color: black;
+    font-size: 90px;
+    color: var(--alternate);
+    opacity: 0.5;
+}
+
+.span__icon{
+    font-weight: 200;
+    color: var(--alternate);
+}
+
+.skill__p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill__p--span1{
+    font-size: var(--subtitle);
+}
+
+.skill__p--span2{
+    font-size: var(--text);
+    color: var(--alternate);
+}
+
+/******** proyects section ********/
+
+.proyects__section{
+    height: auto;
+}
+
+.proyects__h2{
+    font-family: var(--Oswald);
+    font-size: var(--title);
+    font-weight: 600;
+}
+
+.proyects__h3{
+    font-size: var(--subtitle);
+    margin: 20px 0;
 }
 
 .proyects__li1,
@@ -30,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     gap: 8vw;
-    border-top: solid 1px grey;
+    border-top: solid 1px var(--principal);
 }
 .proyects__li2{
     flex-direction: row-reverse;
@@ -38,11 +114,13 @@
 
 .proyects__h4{
     margin-top: 4vw;
-    font-size: 2.5vw;
+    font-size: var(--subtitle);
 }
 
 .p-icon{
-    font-size:1.5em;
+    font-size: 1.5em;
+    opacity: 1;
+    color: var(--first)
 }
 
 .proyects__container{
@@ -56,7 +134,7 @@
     width: 30vw;
     height: 30vw;
     position: relative;
-    background-color: #fff;
+    background-color: var(--alternate);
 }
 
 .proyects__mac{
@@ -93,4 +171,22 @@
     left: 24.4vw;
     bottom: 2.95vw;
     z-index: 4;
+}
+
+
+
+
+.contact__section{
+    background: var(--fifth);
+    color: var(--secund);
+}
+
+
+@keyframes point {
+    from{
+        color:var(--forth)
+    }
+    to{
+        color: var(--third);
+    }
 }

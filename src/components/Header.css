@@ -1,10 +1,11 @@
+
 .header{
-    background-color:  var(--purple) ;
-    height: 47vw;
+    background-color:  var(--principal) ;
+    height: 48vw;
     display: grid;
     grid-template-columns: 65vw 35vw;
     grid-template-rows: 1fr;
-    color: var(--celeste);
+    color: var(--secund);
     z-index: -2;
 }
 
@@ -25,7 +26,7 @@
     grid-template-rows: 3vw 6vw;
     justify-content: start;
     align-items: end;
-    color: white;
+    color: var(--alternate);
 }
 
 .span__hola{
@@ -35,7 +36,7 @@
     bottom: -0.5vw;
     left: -0.1vw;
     font-size: 1.7vw;
-    font-weight:300;
+    font-weight: 300;
     font-style: italic;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .header__figure{
-    background-color: var(--yellow);
+    background-color: var(--secund);
     height: inherit;
 }
 
@@ -67,7 +68,7 @@
     grid-template-columns: 1fr;
     font-family: var(--Oswald);
     align-items: center;
-    color: var(--yellow)
+    color: var(--secund)
 }
 
 .spam__Des{
@@ -76,12 +77,13 @@
 
 .header__h3{
     font-size: 1.3vw;
+    font-weight: 300;
     display: grid;
     grid-row: 1fr;
     grid-template-columns: 21vw 21vw;
     width: 42vw;
     height: 8.5vw;
-    color: white;
+    color: var(--alternate);
     overflow: hidden;
 }
 
@@ -90,7 +92,7 @@
     margin-top: 1.6vw;
     position: relative;
     padding-left: 4px;
-    border-left: solid 1px var(--yellow);
+    border-left: solid 1px var(--secund);
     animation: h3span 2s linear;
 }
 
@@ -103,7 +105,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    color: var(--yellow);
+    color: var(--secund);
     font-style: italic;
     text-align: end;
     box-shadow: -2px -2px 0 1px rgba(255, 255, 255, 0.267);
@@ -111,7 +113,7 @@
 }
 
 .header__p--autor{
-    color: white;
+    color: var(--alternate);
     justify-self: end;
     font-weight: 300;
     font-style: normal;
@@ -134,11 +136,19 @@
     bottom: 1vw;
     right: 1vw;
     z-index: 12;
-    animation: photo 1.5s linear;
+    animation: photo 1s linear;
+    cursor: pointer;
+}
+
+.header__photo:hover{
+    animation: photo-hover 1s linear;
+    bottom: 0vw;
+    right: 0vw;
+    
 }
 
 .header__figure--div{
-    border: solid 1px white;
+    border: solid 1px var(--alternate);
     width: 18vw;
     height: 18vw;
     position: relative;
@@ -158,12 +168,19 @@
     left: 70vw;
 }
 
+.header__a>i{
+    color: var(--principal);
+    font-size: 4vw;
+    animation: bxs-message 1s infinite alternate;
+    opacity: 1;
+}
+
 @keyframes point {
     from{
-        color:var(--red)
+        color:var(--forth)
     }
     to{
-        color: var(--celeste);
+        color: var(--third);
     }
 }
 
@@ -178,6 +195,17 @@
     }
 }
 
+@keyframes photo-hover {
+    from{
+        bottom: 1vw;
+        right: 1vw;
+    }
+    to{
+        bottom: 0vw;
+        right:0vw;
+    }
+}
+
 @keyframes h3span {
     from{
        top: -10vw;
@@ -185,4 +213,13 @@
     to{
         top: 0;
     } 
+}
+
+@keyframes bxs-message {
+    from{
+        scale:1.2;
+    }
+    to{
+        scale:1;
+    }
 }

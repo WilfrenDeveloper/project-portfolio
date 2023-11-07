@@ -15,8 +15,8 @@ const Main = () => {
             </section>
 
             <section className='skill__section' id="skill">
-                <h2>Habilidades Técnicas</h2>
-                <h3>Mis herramientas de trabajo han sido <span>:</span></h3>
+                <h2 className='skill__h2'>Habilidades Técnicas</h2>
+                <h3 className='skill__h3'>He logrado terminar mis proyectos gracias a los conocimientos en<span className="skill__h3--span">:</span></h3>
                 <div className="skill__icons">
                     <div className="div__icon">
                         <i class='bx bxl-react'></i>
