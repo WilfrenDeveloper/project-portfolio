@@ -152,6 +152,12 @@
     animation: point 1.5s infinite alternate;
 }
 
+.header__a{
+    position: relative;
+    top: -10vw;
+    left: 70vw;
+}
+
 @keyframes point {
     from{
         color:var(--red)
