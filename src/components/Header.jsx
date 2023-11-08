@@ -31,7 +31,7 @@ const Header = () => {
             </div>
             <figure className='header__figure'>
                 <div className='header__figure--div'>
-                <img className='header__photo' src="/photo.jpg" alt="" />
+                    <img className='header__photo' src="/photo.jpg" alt="" />
                 </div>
             </figure>
 
