@@ -302,18 +302,18 @@
         height: 266px;
     }
 
-    .header__photo{
-        width: 140px;
-        top: -1vw;
-        left: -1vw;
-
-    }
-
     .header__figure--div{
         width: 140px;
         height: 140px;
         top: 145px;
         left: -40px;
+    }
+
+    .header__photo{
+        width: inherit;
+        top: -1vw;
+        left: -1vw;
+
     }
 
     .header__a{
@@ -374,13 +374,17 @@
     }
 
     .header__svg{
-        top: 50vh;
-        left: 4vw;
-        width: 80vw;
+        top: 64vh;
+        left: 12vw;
+        width: 70vw;
+        stroke: var(--principal);
     }
 
-    path{
-        color: black;
+    .header__figure--div{
+        top: 8vh;
+        left: 30vw;
+        width: 40vw;
+        height: 40vw;
     }
 
     
