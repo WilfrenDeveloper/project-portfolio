@@ -320,7 +320,7 @@
         position: relative;
         bottom: 70px;
         left: 70vw;
-        width: 100px;
+        width: 80px;
     }
     
     .header__a>i{
@@ -328,8 +328,7 @@
         font-size: 40px;
         animation: bxs-message 1s infinite alternate;
         opacity: 1;
-    }
-    
+    }  
 }
 
 @media (max-width: 450px) {
@@ -380,6 +379,10 @@
         stroke: var(--principal);
     }
 
+    path{
+        stroke: var(--principal);
+    }
+    
     .header__figure--div{
         top: 8vh;
         left: 30vw;
@@ -387,7 +390,8 @@
         height: 40vw;
     }
 
-    
-    
-
+    .header__a{
+        display: none;
+    }
 }
+
