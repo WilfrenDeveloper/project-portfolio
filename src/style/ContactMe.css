@@ -32,7 +32,7 @@
 .contact__input{
     background-color: var(--contact);
     border-bottom: 1px solid var(--secund);
-    color: gray;
+    color: var(--alternate);
     padding-bottom: 3px;
 }
 
