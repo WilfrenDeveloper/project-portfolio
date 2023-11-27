@@ -6,12 +6,12 @@ const ContactMe = () => {
             <h2 className='contact__h2'>Contacta me...</h2>
             <form className='contact__form' action="https://formsubmit.co/wilfrenmoney@gmail.com" method="POST" >
                 <label className='contact__label contact__name' htmlFor=""><span>Nombre</span>
-                    <input className='contact__input input__name' type="name" placeholder='Ingresa tu nombre' />
+                    <input className='contact__input input__name' type="name" name="name" placeholder='Ingresa tu nombre' />
                 </label>
 
                 <label className='contact__label contact__email' htmlFor="">
                     <span>Email</span>
-                    <input className='contact__input input__email' type="email" placeholder='Ingresa tu correo' />
+                    <input className='contact__input input__email' type="email" name="email" placeholder='Ingresa tu correo' />
                 </label>
 
                 <label className='contact__label contact__message' htmlFor="">
