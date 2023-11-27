@@ -77,7 +77,7 @@
     scale: 0.95;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .contact__form{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
