@@ -1,0 +1,140 @@
+.nav{
+    position: fixed;
+    top: 0;
+    right: 5px;
+    z-index: 50;
+}
+
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.nav__button{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0);
+    position: fixed;
+    right: 5px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.bx-minus{
+    font-size: 30px;
+}
+
+.bx-1{
+    position: absolute;
+    right: 0;
+    top: 1px;
+    animation: bx-1 0.5s linear;
+}
+
+.bx-2{
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.bx-3{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    animation: bx-3 0.5s linear reverse;
+}
+
+.bx-10{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    rotate: 45deg;
+    animation: bx-10 0.5s linear;
+    
+}
+
+.bx-20{
+    display: none;
+}
+
+.bx-30{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    rotate: 135deg;
+    animation: bx-30 0.5s linear reverse;
+}
+
+@keyframes bx-1 {
+    from{
+        rotate: 225deg;
+        top: 7px;
+    }
+    to{
+        rotate: 0deg;
+        top: 1px;
+    }
+}
+
+@keyframes bx-10 {
+    from{
+        rotate: 0deg;
+        top: 1px;
+        
+    }
+    to{
+        rotate: 225deg;
+        top: 7px;
+    }
+}
+
+@keyframes bx-3 {
+    from{
+        rotate: 135deg;
+        top: 13px;
+    }
+    to{
+        rotate: 0deg;
+        top: 7px;
+    }
+}
+
+@keyframes bx-30{
+    from{
+        rotate: 0deg;
+        top: 7px;
+        
+    }
+    to{
+        rotate: 135deg;
+        top: 13px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .nav__container{
+        display: none;
+    }
+
+    .nav__div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: var(--alternate);
+    }
+
+    .nav__button{
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+
+    .bx-minus{
+        color: var(--secund);
+    }
+    
+}

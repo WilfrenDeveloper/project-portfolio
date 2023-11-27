@@ -22,7 +22,7 @@ const ContactMe = () => {
                 <div>
                 <button className='contact__button' formTarget=''>
                     <span className='contact__button--span'>Enviar </span>
-                    <i class='bx bx-right-arrow-alt bx-flip-vertical bx-flashing' ></i>
+                    <i className='bx bx-right-arrow-alt bx-flip-vertical bx-flashing' ></i>
                 </button>
                 </div>
             </form>
