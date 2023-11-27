@@ -1,0 +1,79 @@
+/******** skill section ********/
+
+.skill__section {
+    background-color: var(--third);
+    color: var(--secund);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill__h2 {
+    font-family: var(--Oswald);
+    font-size: var(--title);
+}
+
+.skill__h3 {
+    font-size: var(--text);
+    font-weight: 500;
+    color: var(--alternate);
+}
+
+.skill__h3--span {
+    animation: point 1.5s infinite alternate;
+}
+
+.skill__icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    margin: 40px 0;
+}
+
+.div__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.div__icon>i {
+    font-size: 90px;
+    color: var(--alternate);
+    opacity: 0.5;
+}
+
+.span__icon {
+    font-weight: 200;
+    color: var(--alternate);
+}
+
+.skill__p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill__p--span1 {
+    font-size: var(--subtitle);
+}
+
+.skill__p--span2 {
+    font-size: var(--text);
+    color: var(--alternate);
+    margin-bottom: 20px;
+}
+
+@keyframes point {
+    from {
+        color: var(--forth)
+    }
+
+    to {
+        color: var(--third);
+    }
+}

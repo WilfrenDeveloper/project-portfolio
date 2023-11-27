@@ -1,7 +1,10 @@
 import Header from "./components/Header"
 import './App.css'
 import Nav from "./components/Nav"
-import Main from "./components/Main"
+import AboutMe from "./components/Main/AboutMe"
+import ContactMe from "./components/Main/ContactMe"
+import MyProyects from "./components/Main/MyProyects"
+import Skill from "./components/Main/Skill"
 
 function App() {
 
@@ -9,7 +12,12 @@ function App() {
     <>
       <Nav />
       <Header />
-      <Main />
+      <main className='main'>
+            <AboutMe />
+            <Skill />
+            <MyProyects />
+            <ContactMe />
+      </main>
 
     </>
   )

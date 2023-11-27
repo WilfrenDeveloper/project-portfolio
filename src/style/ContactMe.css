@@ -1,0 +1,12 @@
+
+/******** contact section ********/
+
+.contact__section {
+    background: var(--fifth);
+    color: var(--secund);
+}
+
+.contact__h2 {
+    font-family: var(--Oswald);
+    font-size: var(--title);
+}

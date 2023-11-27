@@ -1,0 +1,32 @@
+.main {
+    margin: 0;
+    color: var(--letter);
+}
+
+.about__section,
+.skill__section,
+.proyects__section,
+.contact__section {
+    height: 100vh;
+    padding: 5vw 19vw 5vw 10vw;
+}
+
+
+@media (max-height:800px) {
+
+    .about__section,
+    .skill__section,
+    .proyects__section {
+        height: auto;
+    }
+}
+
+@media (max-width:500px) {
+
+    .about__section,
+    .skill__section,
+    .proyects__section,
+    .contact__section {
+        padding: 5vw;
+    }
+}
