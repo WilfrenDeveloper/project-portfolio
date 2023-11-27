@@ -3,26 +3,12 @@
 
 
 :root{
-    /* Color */
-    /*--principal: #63339C;
-    --secund: #ECDF05;
-    --third: #58D8DC;
-    --forth: #E02852;
-    --fifth: #F29C0C;
-    --alternate: white;*/
-
-    /*--principal: #151c36;
-    --secund: #fbdcc4;
-    --third: #abb1bc;
-    --forth: #fff8e6;
-    --fifth: #485778;
-    --alternate: white;*/
 
     --principal:rgb(15, 10, 39);
     --secund:  greenyellow;
     --third: rgb(15, 10, 39);
     --forth: greenyellow;
-    --fifth: black;
+    --contact: black;
     --alternate: white;
     --letter: rgb(15, 10, 39);
 
@@ -47,9 +33,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     font-family: inherit;
-}
+    border: none;
+}   
 
 html{
     font-family: var(--Nunito);

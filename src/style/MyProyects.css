@@ -101,11 +101,18 @@
     .proyects__container {
         width: 52vw;
     }
-
-    
 }
 
 @media (max-width: 380px) {
+    .proyects__li1,
+    .proyects__li2 {
+    flex-direction: column-reverse;
+    gap: 0;
+}
+
+    .proyects__h4{
+        text-align: center;
+    }
 
     .proyects__a{
         align-self: center;

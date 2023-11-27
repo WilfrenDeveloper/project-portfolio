@@ -2,7 +2,7 @@
 /******** contact section ********/
 
 .contact__section {
-    background: var(--fifth);
+    background: var(--contact);
     color: var(--secund);
 }
 
@@ -10,3 +10,89 @@
     font-family: var(--Oswald);
     font-size: var(--title);
 }
+
+.contact__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+
+.contact__label{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label>span{
+    margin-bottom: 5px;
+}
+
+.contact__input{
+    background-color: var(--contact);
+    border-bottom: 1px solid var(--secund);
+    color: gray;
+    padding-bottom: 3px;
+}
+
+.contact__message{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.input__message{
+    width: 100%;
+    min-height: 40px;
+}
+
+.contact__form>div{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+}
+
+.contact__button{
+    width: 230px;
+    height: 40px;
+    background-color: var(--contact);
+    color: var(--alternate);
+    font-size: 20px;
+    border: 1px solid var(--secund);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact__button>i{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.contact__button:hover{
+    background-color: var(--secund);
+    color: var(--contact);
+}
+
+.contact__button:active{
+    scale: 0.95;
+}
+
+@media (max-width: 400px) {
+    .contact__form{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 30px;
+        margin-top: 40px;
+        
+    }
+    
+    .contact__message{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .contact__form>div{
+        grid-column: 1/2;
+    }
+}
+
