@@ -338,6 +338,12 @@
         grid-template-columns: 1fr;
     }
 
+    @media (max-height:700px) {
+        .header{
+            height: 200vw;
+        }    
+    }
+
     .header__div{
         width: 90%;
         margin: 5vw;
@@ -394,4 +400,6 @@
         display: none;
     }
 }
+
+
 
