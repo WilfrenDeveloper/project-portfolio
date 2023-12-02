@@ -17,7 +17,7 @@ const ContactMe = () => {
 
                     <label className='contact__label contact__message' htmlFor="">
                         <span>Mensaje</span>
-                        <textarea className='contact__input input__message' name="message" id="message" cols="30" rows="3" placeholder='Mensaje'></textarea>
+                        <textarea className='contact__input input__message' name="message" id="message" cols="30" rows="3" placeholder='Escribe un mensaje'></textarea>
                     </label>
 
                     <div>
