@@ -34,10 +34,10 @@ const ContactMe = () => {
                     <span>Wilfren Quintero 2023</span>
                 </p>
                 <ul className='contact__ul'>
-                    <a href="https://github.com/WilfrenDeveloper" target='_blank'>
+                    <a href="https://www.linkedin.com/in/oscar-wilfren-quintero-ramos-5a8323294/" target='_blank'>
                         <i class='bx bxl-linkedin-square' ></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/oscar-wilfren-quintero-ramos-5a8323294/" target='_blank'>
+                    <a href="https://github.com/WilfrenDeveloper" target='_blank'>
                         <i class='bx bxl-github' ></i>
                     </a>
                 </ul>

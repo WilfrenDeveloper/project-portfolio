@@ -4,8 +4,8 @@
 
 :root{
 
-    --principal:rgb(15, 10, 39);
-    --secund:  greenyellow;
+    --principal:#0f0a27;
+    --secund:  rgb(171, 255, 46);
     --third: rgb(15, 10, 39);
     --forth: greenyellow;
     --contact: black;

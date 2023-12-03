@@ -13,12 +13,16 @@ function App() {
       <Nav />
       <Header />
       <main className='main'>
-            <AboutMe />
-            <Skill />
-            <MyProyects />
-            <ContactMe />
+        <AboutMe />
+        <Skill />
+        <MyProyects />
+        <ContactMe />
       </main>
-
+      <a className="app__a" href="/CV-WilDev.pdf" download>
+        <i class='bx bxs-file-pdf'></i>
+        <span>CV</span>
+        <i class='bx bx-cloud-download' ></i>
+      </a>
     </>
   )
 }

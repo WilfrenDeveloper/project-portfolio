@@ -11,6 +11,44 @@
     padding: 5vw 19vw 5vw 10vw;
 }
 
+.app__a{
+    position: fixed;
+    width: 60px;
+    height: 100px;
+    background-color: grey;
+    bottom: 40px;
+    right: 40px;
+    color: var(--principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.bxs-file-pdf{
+    font-size: 40px;
+}
+
+.bx-cloud-download{
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
+    animation: download 1s infinite alternate;
+}
+
+@keyframes download {
+    from{
+        bottom: 8px;
+        opacity: 1;
+    }
+    to{
+        bottom: -8px;
+        opacity: 0.2;
+    }
+}
 
 @media (max-height:800px) {
 
@@ -28,5 +66,9 @@
     .proyects__section,
     .contact__section {
         padding: 5vw;
+    }
+
+    .app__a{
+        right: 2vw;
     }
 }
