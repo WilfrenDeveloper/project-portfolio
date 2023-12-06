@@ -1,0 +1,136 @@
+.popup{
+    display: none;
+}
+
+.popup__div{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    animation: popUp linear 2s;
+}
+
+.popup__section {
+    background: white;
+    color: var(--letter);
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid grey;
+    position: relative;
+}
+
+@keyframes popUp {
+    from{
+        right: -300px;
+    }
+    to{
+        right: 0;
+    }
+}
+
+.popup__x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+}
+
+.popup__h2 {
+    font-family: var(--Oswald);
+    font-size: 18px;margin-bottom: 10px;
+}
+
+.popup__form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    
+}
+
+.popup__label{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__input{
+    border-bottom: 1px solid var(--secund);
+    padding-bottom: 3px;
+}
+
+.popup__message{
+    max-width: 210px;
+    min-height: 100px;
+    max-height: 160px;
+}
+
+.popup__form>div{
+    display: flex;
+    justify-content: center;
+}
+
+.popup__button{
+    width: 150px;
+    height: 30px;
+    background-color: var(--contact);
+    color: var(--alternate);
+    font-size: 16px;
+    border: 1px solid var(--secund);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.popup__button>i{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.popup__button:hover{
+    background-color: var(--secund);
+    color: var(--contact);
+}
+
+.popup__button:active{
+    scale: 0.95;
+}
+
+
+@media (max-width: 450px) {
+    .popup__form{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .popup__message{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .popup__form>div{
+        grid-column: 1/2;
+    }
+}
+
+@media (max-height:500px) {
+
+    .popup__section {
+        min-height: 460px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .popup__footer{
+        font-size: 15px;
+    }
+}

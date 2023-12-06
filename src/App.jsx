@@ -6,8 +6,10 @@ import ContactMe from "./components/Main/ContactMe"
 import MyProyects from "./components/Main/MyProyects"
 import Skill from "./components/Main/Skill"
 import Footer from "./components/Main/Footer"
+import { PopUp } from "./components/PopUp"
 
 function App() {
+
 
   return (
     <>
@@ -19,11 +21,12 @@ function App() {
         <MyProyects />
         <ContactMe />
         <Footer />
+        <PopUp />
       </main>
       <a className="app__a" href="/CV-WilDev.pdf" download>
-        <i class='bx bxs-file-pdf'></i>
+        <i className='bx bxs-file-pdf'></i>
         <span>CV</span>
-        <i class='bx bx-cloud-download' ></i>
+        <i className='bx bx-cloud-download' ></i>
       </a>
     </>
   )
