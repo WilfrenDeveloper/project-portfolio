@@ -8,8 +8,8 @@ const MyProyects = () => {
                 <ul className="proyects__ul">
                     <li className="proyects__li1">
                         <div className="proyects__container">
-                            <h4 className="proyects__h4">ecommerce</h4>
-                            <p className="proyects__p">Es una página donde puedes encontrar diferentes tipos de camisetas. Puedes añadir camisetas al carrito de compras.</p>
+                            <h4 className="proyects__h4">Ecommerce</h4>
+                            <p className="proyects__p">Es una tienda online donde puedes encontrar diferentes tipos de camisetas. Puedes añadir camisetas al carrito de compras y ver el costo total de los productos que escojas.</p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>
@@ -26,7 +26,7 @@ const MyProyects = () => {
                     <li className="proyects__li2">
                         <div className="proyects__container">
                             <h4 className="proyects__h4">Galleta de la Fortuna</h4>
-                            <p className="proyects__p">Abre una galleta de la fortuna y descubre lo que el mensaje que el universo tiene para ti.</p>
+                            <p className="proyects__p">Abre una galleta de la fortuna y descubre lo que el mensaje que el universo tiene para ti, puedes encontrar mensajes motivadores o concejos muy positivos.</p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>
@@ -43,7 +43,7 @@ const MyProyects = () => {
                     </li>
                     <li className="proyects__li1">
                         <div className="proyects__container">
-                            <h4 className="proyects__h4">Wather App</h4>
+                            <h4 className="proyects__h4">Weather App</h4>
                             <p className="proyects__p">¿Quieres saber el estado actual de clima?
                             <br />
                             Con esta app puedes conocer el estado del clima de cualquier ciudad el mundo, en tiempo real.</p>

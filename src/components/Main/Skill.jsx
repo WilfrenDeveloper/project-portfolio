@@ -4,7 +4,7 @@ const Skill = () => {
     return (
         <section className='skill__section' id="skill">
             <h2 className='skill__h2'>Habilidades Técnicas</h2>
-            <h3 className='skill__h3'>He logrado terminar mis proyectos gracias a los conocimientos en<span className="skill__h3--span">:</span></h3>
+            <h3 className='skill__h3'>Tengo experiencia con las siguientes tecnologías<span className="skill__h3--span">:</span></h3>
             <div className="skill__icons">
                 <div className="div__icon">
                     <i className='bx bxl-react'></i>

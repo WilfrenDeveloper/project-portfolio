@@ -5,7 +5,7 @@ const ContactMe = () => {
     return (
         <>
             <section className='contact__section' id="contact">
-                <h2 className='contact__h2'>Contacta me...</h2>
+                <h2 className='contact__h2'>Contactame...</h2>
                 <form className='contact__form' action="https://formsubmit.co/wilfrenmoney@gmail.com" method="POST" >
                     <label className='contact__label contact__name' htmlFor=""><span>Nombre</span>
                         <input className='contact__input input__name' type="name" name="name" placeholder='Ingresa tu nombre' />

@@ -44,6 +44,7 @@
 .bx-minus{
     font-size: 60px;
     color: var(--principal);
+    text-decoration: solid green;
 }
 
 .bx-1{

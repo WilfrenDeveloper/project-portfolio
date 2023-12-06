@@ -10,7 +10,7 @@ export const PopUp = () => {
         document.querySelector('.popup').classList.remove('popup__div')
         setTimeout(() => {
             document.querySelector('.popup').classList.add('popup__div')
-        }, 30000);
+        }, 40000);
     }
 
   return (

@@ -21,6 +21,10 @@
     color: var(--forth);
 }
 
+.aside i:hover{
+    filter: brightness(1.5);
+}
+
 @media (max-width: 800px) {
 
     .aside__div{

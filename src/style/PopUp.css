@@ -4,12 +4,11 @@
 
 .popup__div{
     display: block;
-    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 20;
     display: flex;
     justify-content: end;
     align-items: center;

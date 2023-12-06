@@ -59,6 +59,15 @@
     }
 }
 
+@media (max-width:620px) {
+    .about__section,
+    .skill__section,
+    .proyects__section,
+    .contact__section {
+        padding-right: 15vw;
+    }
+}
+
 @media (max-width:500px) {
 
     .about__section,
