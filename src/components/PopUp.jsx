@@ -4,13 +4,13 @@ export const PopUp = () => {
 
     const popUP = setTimeout(() => {
         document.querySelector('.popup').classList.add('popup__div')
-    }, 8000);
+    }, 4000);
 
     const handleClick= () => {
         document.querySelector('.popup').classList.remove('popup__div')
         setTimeout(() => {
             document.querySelector('.popup').classList.add('popup__div')
-        }, 10000);
+        }, 30000);
     }
 
   return (
