@@ -8,7 +8,7 @@
 .proyects__section,
 .contact__section {
     height: 100vh;
-    padding: 5vw 19vw 5vw 10vw;
+    padding: 5vw 25vw 5vw 10vw;
 }
 
 .app__a{
@@ -16,8 +16,8 @@
     width: 60px;
     height: 100px;
     background-color: grey;
-    bottom: 40px;
-    right: 40px;
+    bottom: 25px;
+    right: 2vw;
     color: var(--principal);
     display: flex;
     flex-direction: column;

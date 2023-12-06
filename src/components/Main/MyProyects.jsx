@@ -9,7 +9,7 @@ const MyProyects = () => {
                     <li className="proyects__li1">
                         <div className="proyects__container">
                             <h4 className="proyects__h4">ecommerce</h4>
-                            <p className="proyects__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam voluptatibus at cumque itaque ad voluptas facilis maiores commodi dicta.</p>
+                            <p className="proyects__p">Es una página donde puedes encontrar diferentes tipos de camisetas. Puedes añadir camisetas al carrito de compras.</p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>
@@ -26,7 +26,7 @@ const MyProyects = () => {
                     <li className="proyects__li2">
                         <div className="proyects__container">
                             <h4 className="proyects__h4">Galleta de la Fortuna</h4>
-                            <p className="proyects__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam voluptatibus at cumque itaque ad voluptas facilis maiores commodi dicta.</p>
+                            <p className="proyects__p">Abre una galleta de la fortuna y descubre lo que el mensaje que el universo tiene para ti.</p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>
@@ -44,7 +44,9 @@ const MyProyects = () => {
                     <li className="proyects__li1">
                         <div className="proyects__container">
                             <h4 className="proyects__h4">Wather App</h4>
-                            <p className="proyects__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam voluptatibus at cumque itaque ad voluptas facilis maiores commodi dicta.</p>
+                            <p className="proyects__p">¿Quieres saber el estado actual de clima?
+                            <br />
+                            Con esta app puedes conocer el estado del clima de cualquier ciudad el mundo, en tiempo real.</p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>
@@ -62,7 +64,9 @@ const MyProyects = () => {
                     <li className="proyects__li2">
                         <div className="proyects__container">
                             <h4 className="proyects__h4">Rick and Morty</h4>
-                            <p className="proyects__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam voluptatibus at cumque itaque ad voluptas facilis maiores commodi dicta.</p>
+                            <p className="proyects__p">Sé que te gusta ver Rick and Morty, aquí encontrarás todos los personajes de la serie.
+                            Tambien puedes buscar los personajes que están en cada universo paralelo de la serie.
+                            </p>
                             <div className="proyects__icons">
                                 <i className='bx bxl-javascript p-icon'></i>
                                 <i className='bx bxl-css3 p-icon' ></i>

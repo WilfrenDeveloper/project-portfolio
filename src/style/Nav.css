@@ -27,7 +27,7 @@
     height: 55px;
     background-color: rgba(128, 128, 128, 0);
     position: fixed;
-    right: 35px;
+    right: 2vw;
     cursor: pointer;
     z-index: 50;
     overflow: hidden;
@@ -50,14 +50,7 @@
     position: absolute;
     left: 3px;
     top: 0;
-    animation: bx-1 0.3s linear;
-}
-
-.bx-3{
-    position: absolute;
-    left: 10px;
-    top: 13px;
-    animation: bx-3 0.3s linear reverse;
+    animation: bx-1 0.2s linear;
 }
 
 .bx-10{
@@ -65,8 +58,14 @@
     left: 0;
     top: 7px;
     rotate: 45deg;
-    animation: bx-10 0.3s linear;
-    
+    animation: bx-10 0.2s linear;
+}
+
+.bx-3{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    animation: bx-3 0.2s linear;
 }
 
 .bx-30{
@@ -74,54 +73,61 @@
     left: 0;
     top: 7px;
     rotate: 135deg;
-    animation: bx-30 0.3s linear reverse;
+    animation: bx-30 0.2s linear;
 }
 
 
 
 @keyframes bx-1 {
     from{
-        rotate: 225deg;
+        rotate: 45deg;
         top: 7px;
+        left: 0px;
     }
     to{
         rotate: 0deg;
-        top: 1px;
+        top: 0px;
+        left: 3px;
     }
 }
 
 @keyframes bx-10 {
     from{
         rotate: 0deg;
-        top: 1px;
-        
+        top: 0px;
+        left: 3px;
     }
     to{
-        rotate: 225deg;
+        rotate: 45deg;
         top: 7px;
+        left: 0px;
     }
 }
 
 @keyframes bx-3 {
     from{
-        rotate: 135deg;
-        top: 13px;
+        rotate: -45deg;
+        top: 7px;
+        left: 0px;
     }
     to{
         rotate: 0deg;
-        top: 7px;
+        top: 13px;
+        left: 10px;
     }
 }
 
 @keyframes bx-30{
     from{
         rotate: 0deg;
-        top: 7px;
+        top: 13px;
+        left: 10px;
         
     }
     to{
-        rotate: 135deg;
-        top: 13px;
+        rotate: -45deg;
+        top: 7px;
+        left: 0px;
     }
 }
 

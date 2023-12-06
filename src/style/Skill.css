@@ -1,7 +1,7 @@
 /******** skill section ********/
 
 .skill__section {
-    background-color: var(--third);
+    background-color: var(--principal);
     color: var(--secund);
     display: flex;
     flex-direction: column;

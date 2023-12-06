@@ -38,7 +38,6 @@
 .about__p2:hover,
 .about__p3:hover {
     border: var(--secund) solid 1px;
-    filter: drop-shadow(2px 2px 8px);
 }
 
 @media (max-width: 900px) {
@@ -50,12 +49,21 @@
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 720px) {
 
     .about__p1,
     .about__p2,
     .about__p3 {
         align-self: flex-start;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .about__p1,
+    .about__p2,
+    .about__p3 {
+        width: 70vw;
     }
 }
 

@@ -52,7 +52,7 @@
     grid-column: 2/3;
     position: relative;
     left: -1vw;
-    bottom: -1vw;
+    bottom: -1.1vw;
     font-size: 3.2vw;
 }
 
@@ -129,34 +129,6 @@
     height: inherit;
 }
 
-.header__photo{
-    width: 18vw;
-    position: relative;
-    top: -1vw;
-    left: -1vw;
-    z-index: 12;
-    animation: photo 1s linear;
-    cursor: pointer;
-}
-
-.header__photo:hover{
-    animation: photo-hover 1s linear;
-        top: 0;
-        left: 0;
-    
-}
-
-.header__figure--div{
-    border: solid 1px var(--alternate);
-    width: 18vw;
-    height: 18vw;
-    position: relative;
-    top: 15vw;
-    left: -8vw;
-    z-index: 11;
-    box-sizing: content-box;
-}
-
 .span__point{
     animation: point 1.5s infinite alternate;
 }
@@ -231,7 +203,6 @@
 
     .header__div{
         grid-template-rows: repeat(3, auto);
-        margin: 3vw 3vw 3vw 10vw;
         row-gap: 10px;
         align-items: start;
         z-index: 2;
@@ -302,20 +273,6 @@
         height: 266px;
     }
 
-    .header__figure--div{
-        width: 140px;
-        height: 140px;
-        top: 145px;
-        left: -40px;
-    }
-
-    .header__photo{
-        width: inherit;
-        top: -1vw;
-        left: -1vw;
-
-    }
-
     .header__a{
         position: relative;
         bottom: 70px;
@@ -376,28 +333,30 @@
     .header__figure{
         background-color: var(--secund);
         height: auto;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .header__svg{
-        top: 64vh;
+        position: static;
         left: 12vw;
         width: 70vw;
-        stroke: var(--principal);
     }
 
     path{
         stroke: var(--principal);
     }
-    
-    .header__figure--div{
-        top: 8vh;
-        left: 30vw;
-        width: 40vw;
-        height: 40vw;
-    }
 
     .header__a{
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__div{
+        margin: 3vw 3vw 3vw 5vw;
     }
 }
 
