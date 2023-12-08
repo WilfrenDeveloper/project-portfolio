@@ -57,11 +57,13 @@
 .popup__label{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .popup__input{
     border-bottom: 1px solid var(--secund);
     padding-bottom: 3px;
+    width: 210px;
 }
 
 .popup__message{
@@ -83,6 +85,7 @@
     font-size: 16px;
     border: 1px solid var(--secund);
     cursor: pointer;
+    margin-top: 20px;
     transition: 0.3s;
 }
 
@@ -103,4 +106,34 @@
 
 .popup__button:active{
     scale: 0.95;
+}
+
+.popup__name,
+.popup__mail,
+.popup__msn {
+    display: none;
+    font-size: 13px;
+    background-color: #fffecf;
+    padding: 2px 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    width: 100%;
+}
+
+.popup__msn {
+    top: 88px;
+}
+
+.popup__name>span,
+.popup__mail>span,
+.popup__msn>span {
+    color: black;
+}
+
+.p--name,
+.p--mail,
+.p--msn {
+    display: block;
 }

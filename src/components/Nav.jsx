@@ -9,8 +9,6 @@ const Nav = () => {
     menu ? setMenu(false) : setMenu(true)
   }
 
-  console.log(menu)
-
   return (
     <nav className='nav'>
       <button onClick={handleClick} className='nav__button'>
