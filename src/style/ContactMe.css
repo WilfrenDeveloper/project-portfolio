@@ -78,6 +78,18 @@
     scale: 0.95;
 }
 
+#name{
+    display: none;
+}
+
+#mail{
+    display: none;
+}
+
+#messaje{
+    display: none;
+}
+
 
 @media (max-width: 450px) {
     .contact__form{

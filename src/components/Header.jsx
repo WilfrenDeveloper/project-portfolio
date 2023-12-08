@@ -31,7 +31,7 @@ const Header = () => {
             <figure className='header__figure'>
                 <div>
                 <div className='header__figure--div'>
-                    <img className='header__photo' src="/avatar.jpeg" alt="" />
+                    <img className='header__photo' src="/avatar.jpg" alt="" />
                 </div>
                 </div>
                 <svg className='header__svg' xmlns="http://www.w3.org/2000/svg" width="935" height="701" viewBox="0 0 935 701" id="avatar-shapes" data-shape="true">
