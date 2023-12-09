@@ -9,6 +9,35 @@
     z-index: -2;
 }
 
+.darkmode__btn{
+    position: absolute;
+    top: 20px;
+    right: 10vw;
+    cursor: pointer;
+    z-index: 40;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.moon,
+.sun{
+    display: none;
+}
+
+.i__moon,
+.i__sun{
+    display: block;
+}
+
+.i__moon{
+    color: white;
+    text-shadow: 0 0 8px rgb(240, 228, 142);
+}
+.i__sun{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(64, 64, 64);
+}
+
 .header__div{
     position: relative;
     display: grid;
@@ -124,9 +153,17 @@
     animation: svg 1.5s alternate infinite;
 }
 
+.header__svg--darkmode{
+    stroke: var(--secund);
+}
+
 .header__figure{
     background-color: var(--secund);
     height: inherit;
+}
+
+.header__figure--darkmode{
+    background-color: var(--darkMode);
 }
 
 .header__photo{
@@ -169,10 +206,18 @@
 }
 
 .header__a>i{
-    color: var(--principal);
+    
     font-size: 4vw;
     animation: bxs-message 1s infinite alternate;
     opacity: 1;
+}
+
+.header__a--lightmode{
+    color: var(--principal);;
+}
+
+.header__a--darkmode{
+    color: var(--secund);
 }
 
 .header__a>i:hover{
@@ -353,6 +398,10 @@
         }    
     }
 
+    .darkmode__btn{
+        right: 20vw;
+    }
+
     .header__div{
         width: 90%;
         margin: 5vw;
@@ -391,6 +440,10 @@
         position: relative;
     }
 
+    .header__figure--darkmode{
+        background-color: var(--darkMode);
+    }
+
     .header__figure>div{
         position: absolute;
         width: inherit;
@@ -411,6 +464,10 @@
 
     path{
         stroke: var(--principal);
+    }
+
+    .header__svg--darkmode>path{
+        stroke: var(--secund);
     }
 
     .header__a{

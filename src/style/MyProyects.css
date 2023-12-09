@@ -4,6 +4,19 @@
     height: auto;
 }
 
+.proyects__section--darkmode {
+    background-color: var(--dark);
+}
+
+.proyects__section--darkmode>h2 {
+    color: var(--secund);
+}
+
+.proyects__section--darkmode>h3,
+.proyects__section--darkmode>ul {
+    color: var(--alternate);
+}
+
 .proyects__h2 {
     font-family: var(--Oswald);
     font-size: var(--title);
@@ -50,6 +63,7 @@
     height: 30vw;
     position: relative;
     background-color: var(--alternate);
+    border-radius: 20px;
 }
 
 .proyects__mac {

@@ -1,8 +1,8 @@
 import'../../style/MyProyects.css'
 
-const MyProyects = () => {
+const MyProyects = ({ darkMode }) => {
   return (
-    <section className='proyects__section' id="proyects">
+    <section className={`proyects__section ${darkMode ? 'proyects__section--darkmode' : ''}`} id="proyects">
                 <h2 className="proyects__h2">Mis proyectos</h2>
                 <h3 className="proyects__h3">Esta es un lista que cosas que he hecho</h3>
                 <ul className="proyects__ul">

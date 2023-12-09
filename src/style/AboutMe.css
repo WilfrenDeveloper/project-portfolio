@@ -4,19 +4,29 @@
     flex-direction: column;
 }
 
+.about__section--darkmode{
+    background-color: var(--dark);
+}
+
 .about__h2 {
     font-family: var(--Oswald);
     font-size: var(--title);
 }
 
-.about__p1,
-.about__p2,
-.about__p3 {
+.about__section--darkmode>h2{
+    color: var(--secund);
+}
+
+.about__section>p{
     font-size: var(--text);
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
     border-left: solid 2px var(--secund);
+}
+
+.about__section--darkmode>p{
+    color: var(--alternate);
 }
 
 .about__p1 {

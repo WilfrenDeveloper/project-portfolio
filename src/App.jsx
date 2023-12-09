@@ -7,18 +7,29 @@ import MyProyects from "./components/Main/MyProyects"
 import Skill from "./components/Main/Skill"
 import Footer from "./components/Main/Footer"
 import { PopUp } from "./components/PopUp"
+import { useState } from "react"
 
 function App() {
 
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
     <>
-      <Nav />
-      <Header />
+      <Nav 
+        darkMode = {darkMode}
+      />
+      <Header 
+        darkMode = {darkMode}
+        setDarkMode = {setDarkMode}
+      />
       <main className='main'>
-        <AboutMe />
+        <AboutMe 
+          darkMode = {darkMode}
+        />
         <Skill />
-        <MyProyects />
+        <MyProyects
+          darkMode = {darkMode}
+        />
         <ContactMe />
         <Footer />
         <PopUp />

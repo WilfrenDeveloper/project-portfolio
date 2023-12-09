@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import '../style/Nav.css'
 import { useState } from 'react'
 
-const Nav = () => {
+const Nav = ({ darkMode }) => {
   const [menu, setMenu] = useState(false)
 
   const handleClick = () => {
@@ -12,8 +12,8 @@ const Nav = () => {
   return (
     <nav className='nav'>
       <button onClick={handleClick} className='nav__button'>
-        <i className={`bx bx-minus ${(menu === true)?"bx-10":"bx-1"}`}></i>
-        <i className={`bx bx-minus ${(menu === true)?"bx-30":"bx-3"}`}></i>
+        <i className={`bx bx-minus ${(menu === true)?"bx-10":"bx-1"} ${darkMode ? 'bx-minus__darkmode' : ''}`}></i>
+        <i className={`bx bx-minus ${(menu === true)?"bx-30":"bx-3"} ${darkMode ? 'bx-minus__darkmode' : ''}`}></i>
       </button>
       <div className={`nav__container ${(menu === true)?"nav__div":""}`}>
         <a className='nav__a' href="#root">Inicio</a>
