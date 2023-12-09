@@ -1,17 +1,20 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import '../style/PopUp.css'
 
 export const PopUp = () => {
 
-    const popUP = setTimeout(() => {
-        document.querySelector('.popup').classList.add('popup__div')
-    }, 4000);
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector('.popup').classList.add('popup__div')
+        }, 4000);
+    }, [])
 
-    const handleClick= () => {
+
+    const handleClick = () => {
         document.querySelector('.popup').classList.remove('popup__div')
         setTimeout(() => {
             document.querySelector('.popup').classList.add('popup__div')
-        }, 60000);
+        }, 45000);
     }
 
     let url = "https://formsubmit.co/wilfrenmoney@gmail.com"
@@ -46,13 +49,13 @@ export const PopUp = () => {
             }
         }
     }
-    
 
-  return (
-    <div className='popup'>
-        <section className='popup__section'>
-            <button className='popup__x' onClick={handleClick}>X</button>
-            <h2 className='popup__h2'>Hola, se que tienes algo en mente, escribeme 😉</h2>
+
+    return (
+        <div className='popup'>
+            <section className='popup__section'>
+                <button className='popup__x' onClick={handleClick}>X</button>
+                <h2 className='popup__h2'>Hola, se que tienes algo en mente, escribeme 😉</h2>
                 <form className='popup__form'>
                     <label className='popup__label popup__name--lbl' htmlFor=""><span>Nombre</span>
                         <input className='popup__input input__name' onClick={handleInput} ref={name} type="name" name="name" placeholder='Ingresa tu nombre' />
@@ -81,8 +84,8 @@ export const PopUp = () => {
                             <i className='bx bx-right-arrow-alt bx-flip-vertical bx-flashing' ></i>
                         </button>
                     </div>
-            </form>
+                </form>
             </section>
-    </div>
-  )
+        </div>
+    )
 }
