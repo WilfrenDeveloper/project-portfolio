@@ -36,6 +36,12 @@
     gap: 4vw;
 }
 
+.proyects__section--darkmode .proyects__li1,
+.proyects__section--darkmode .proyects__li2 {
+    border-top: solid 1px var(--alternate);
+    padding-top: 20px;
+}
+
 .proyects__li2 {
     flex-direction: row-reverse;
 }
