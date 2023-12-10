@@ -34,7 +34,7 @@ function App() {
         <Footer />
         <PopUp />
       </main>
-      <a className="app__a" href="/CV-WilDev.pdf" download>
+      <a className="app__a" href="/oscar-wilfren-quintero-ramos.pdf" download>
         <i className='bx bxs-file-pdf'></i>
         <span>CV</span>
         <i className='bx bx-cloud-download' ></i>
