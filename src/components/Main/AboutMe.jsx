@@ -4,11 +4,16 @@ const AboutMe = ({ darkMode }) => {
     return (
         <section className={`about__section ${darkMode ? 'about__section--darkmode' : ''}`} id="about">
             <h2 className='about__h2'>Acerca de mí</h2>
-            <p className='about__p1'>Desarrollador Full Stack en formación con conocimientos en HTML, CSS, JavaScript. Soy una persona a la que le gusta investigar y aumentar su conocimiento y experiencia en la programación y así mismo conocer herramientas que me ayuden a mejorar mi desempeño como programador</p>
+            <p className='about__p1'>
+                Desarrollador Fullstack con experiencia en varios proyectos FreeLancer. Adicionalmente, tengo un título en Análisis y Programación de sistemas donde gané un reconocimiento por mejor estudiante por rendimiento académico y por cooperación con mis compañeros.            </p>
 
-            <p className='about__p2'>Procuro siempre ayudar a mis semejantes a tiempo y fuera de tiempo. Una buena forma de aprender es enseñando eso me ha servido para mejorar mis habilidades laborales y blandas.</p>
+            <p className='about__p2'>
+                Puedo diseñar y desarrollar un sitios Web de manera eficiente y adaptable a cualquier pantalla, llamando la atención del usuario haciendo de la página un lugar atractivo y funcional.
+            </p>
 
-            <p className='about__p3'>He encontrado una gran pasión por el desarrollo web y la implementacion de aplicaciones que busquen supplir necesidades sociales y resolver problemas.</p>
+            <p className='about__p3'>
+                Tengo la capacidad de encontrar problemas de código y arreglarlos de manera que sea un código eficiente y entendible para facilitar el trabajo en equipo. Me gusta ser diligente con mis trabajos. Suelo ser una persona amigable y proactiva a la que le gusta ayudar.
+            </p>
         </section>
     )
 }
