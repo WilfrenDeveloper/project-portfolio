@@ -44,7 +44,15 @@ const Skill = () => {
                 </div>
                 <div className="div__icon">
                     <i className='bx bxl-nodejs' ></i>
-                    <span className="span__icon">node.js</span>
+                    <span className="span__icon">nodejs</span>
+                </div>
+                <div className="div__icon">
+                    <i className='bx bxl-postgresql' ></i>
+                    <span className="span__icon">PostgreSQL</span>
+                </div>
+                <div className="div__icon">
+                    <i className='bx bxs-data' ></i>
+                    <span className="span__icon">Base de Datos</span>
                 </div>
             </div>
             <p className="skill__p">

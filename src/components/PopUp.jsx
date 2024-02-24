@@ -55,7 +55,7 @@ export const PopUp = () => {
         <div className='popup'>
             <section className='popup__section'>
                 <button className='popup__x' onClick={handleClick}>X</button>
-                <h2 className='popup__h2'>Hola, se que tienes algo en mente, escribeme 😉</h2>
+                <h2 className='popup__h2'>Hola, sé que tienes algo en mente, escríbeme 😉</h2>
                 <form className='popup__form'>
                     <label className='popup__label popup__name--lbl' htmlFor=""><span>Nombre</span>
                         <input className='popup__input input__name' onClick={handleInput} ref={name} type="name" name="name" placeholder='Ingresa tu nombre' />
