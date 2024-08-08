@@ -26,6 +26,16 @@ const Skill = () => {
                     <i className='bx bx-devices'></i>
                     <span className="span__icon">Sitios Web Responsivos</span>
                 </div>
+
+                <div className="div__icon">
+                    <i class='bx bxl-php'></i>
+                    <span className="span__icon">PHP</span>
+                </div>
+                <div className="div__icon">
+                    <i class='bx bxl-redux'></i>
+                    <span className="span__icon">Redux</span>
+                </div>
+
                 <div className="div__icon">
                     <i className='bx bxl-typescript'></i>
                     <span className="span__icon">TypeScript</span>
